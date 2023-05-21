@@ -1,0 +1,369 @@
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin: 0;
+	color: white;
+	background-color: #05061a;
+	font-family: Roboto;
+}
+
+p, h1 { margin: 0 }
+
+#avviso
+{
+	background-color: rgba(0, 0, 0, .8);
+	width: 30%;
+	height: 30%;
+	margin-left: 35%;
+	margin-top: 10%;
+	position: fixed;
+	z-index: 20000;
+	text-align: center;
+	transition-duration: .5s;
+	transform: translateY(-600px);
+}
+
+#menu
+{
+	line-height: 60px;
+	text-align: center;
+	z-index: 1;
+	width: 50%;
+	height: 70px;
+	border-radius: 0px 0px 15px 15px;
+	background-color: #0d0e2e;
+	opacity: 90%;
+	margin-left: 25%;
+	position: fixed;
+	transform: translateY(-45px);
+	transition-duration: .5s;
+}
+
+.menu-text
+{
+	width: 10%;
+	left: 45%;
+	position: fixed;
+	font-weight: 300;
+	opacity: 30%;
+	margin-top: 0px;
+	z-index: 99999;
+	pointer-events: none;
+}
+
+#menu:hover
+{
+	transform: translateY(0px);
+}
+
+.menu-title
+{
+	font-family: Roboto;
+	font-size: 26px;
+	margin-left: 10px;
+	color: white;
+	float: left;
+}
+
+.menu-button
+{
+	color: white;
+	padding: 0px 10px 0px 10px;
+	border: none;
+	border-radius: 15px;
+	height: 70px;
+	background-color: #0d0e2e;
+	transition-duration: .4s;
+	font-size: 18px;
+	float: right;
+}
+
+.menu-button:hover
+{
+	background-color: #05061a;
+	height: 75px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 0px;
+}
+
+#main-page
+{
+	text-align: center;
+	background-color: #18193b;
+	height: 800px;
+}
+
+.main-page-subtitle
+{
+	position: absolute;
+	margin-top: 300px;
+	max-width: 60%;
+	padding-left: 20%;
+	font-size: 4vw;
+}
+
+#games-page
+{
+	text-align: center;
+	background-image: url("images/wallpaper.png");
+	width: 100%;
+	height: 800px;
+	background-attachment: fixed;
+	background-position-x: center;
+}
+
+#fade-in
+{
+	opacity: 0;
+	transform: translateY(-20px);
+	transition-duration: .5s;
+}
+
+#username, #password
+{
+	margin-right: 100px;
+	color: white;
+	float: left;
+	background-color: rgb(65, 70, 128);
+	border: none;
+	border-radius: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+#curtain-menu
+{
+	margin-top: 70px;
+	opacity: 0;
+	background-color: #0d0e2e;
+	width: 40%;
+	height: 160px;
+	transition-duration: .5s;
+	margin-left: 60%;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.game-container
+{
+	display: inline-block;
+	border-radius: 10px;
+	width: 200px;
+	height: 160px;
+	background-color: rgba(0, 255, 153, 0.312);
+	opacity: 90%;
+	margin: 15px;
+	transition-duration: .5s;
+}
+
+.game-container:hover
+{
+	transform: translateY(-15px);
+}
+
+.container-icon
+{
+	margin-top: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+
+.page-subtitle
+{
+	padding: 50px 0px 50px 0px;
+	font-size: 4vw;
+}
+
+#team-page
+{
+	text-align: center;
+	background-color: #18193b;
+	width: 100%;
+	height: 800px;
+}
+
+.team-container
+{
+	display: inline-block;
+	box-sizing: border-box;
+    padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 10px;
+	width: 200px;
+	height: 160px;
+	background-color: #0d0e2e;
+	opacity: 90%;
+	margin: 15px;
+	transition-duration: .5s;
+}
+
+.team-container:hover
+{
+	transform: translateY(-15px);
+}
+
+.container-icon
+{
+	margin-top: 10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+}
+
+.container-info
+{
+	font-weight: 300;
+}
+
+#footer
+{
+	text-align: center;
+	width: 100%;
+	height: 200px;
+	background-color: #05061a;
+}
+
+#mobile-menu
+{
+	display: none;
+}
+
+@media screen and (max-width: 900px)
+{
+	#curtain-menu { display: none; }
+
+	.menu-text { display: none; }
+
+	#mobile-menu
+	{
+		display: inline;
+		position: fixed;
+		width: 100%;
+		height: 0%;
+		z-index: 9999;
+		opacity: 90%;
+		background-color: #0d0e2e;
+		transition-duration: .5s;
+	}
+
+	#mobile-menu-button
+	{
+		transform-origin: center;
+		transition-duration: .5s;
+		width: 40px;
+		height: 40px;
+		float: right;
+		margin: 20px 20px;
+	}
+
+	.mobile-menu-title
+	{
+		margin: 20px 0px 20px 0px;
+		font-size: 35px;
+		color: white;
+	}
+
+	#mobile-menu-content
+	{
+		text-align: center;
+		transition-duration: .5s;
+		opacity: 0;
+	}
+
+	#button-container
+	{
+		position: fixed;
+		width: 100%;
+		height: 40px;
+		z-index: 10000;
+	}
+
+	.mobile-menu-button
+	{
+		margin:0 auto;
+		display: block;
+		color: white;
+		padding: 20px 10px 20px 10px;
+		border: none;
+		border-radius: 10px;
+		height: 60px;
+		background-color: #0d0e2e;
+		transition-duration: .4s;
+		font-size: 3vh;
+	}
+
+	.mobile-menu-button:hover
+	{
+		background-color: #05061a;
+		height: 65px;
+		padding-left: 15px;
+		padding-right: 15px;
+		border-radius: 0px;
+	}
+
+	#line
+	{
+		margin-bottom: 10px;
+		width: 40px;
+		height: 6px;
+		background-color: white;
+	}
+
+	#menu
+	{
+		display: none;
+	}
+	
+	.page-subtitle
+	{
+		font-size: 4vh;
+	}
+
+	.main-page-subtitle
+	{
+		font-size: 4vh;
+	}
+
+	#avviso { display: none; }
+}
+
+@media screen and (max-width: 463px)
+{
+	#games-page
+	{
+		height: 1200px;
+	}
+
+	#team-page
+	{
+		height: 1200px;
+	}
+
+	#avviso { display: none; }
+}
+
+@media screen and (max-width: 200px)
+{
+	body
+	{
+		display: none;
+	}
+
+	html
+	{
+		background-image: url(images/zeb.jpg);
+		background-position: -120px 100px;
+		background-size: 300%;
+		background-repeat: no-repeat;
+	}
+
+	#avviso { display: none; }
+}
