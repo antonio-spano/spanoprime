@@ -256,6 +256,7 @@ p, h1 { margin: 0 }
 
 	#mobile-menu-button
 	{
+		cursor: pointer;
 		transform-origin: center;
 		transition-duration: .5s;
 		width: 40px;
