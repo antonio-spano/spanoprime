@@ -255,7 +255,7 @@ p, h1 { margin: 0 }
 		transition-duration: .5s;
 	}
 
-	#mobile-menu-button
+	#mobile-curtain-menu-button
 	{
 		transform-origin: center;
 		transition-duration: .5s;
@@ -263,6 +263,11 @@ p, h1 { margin: 0 }
 		height: 40px;
 		float: right;
 		margin: 20px 20px;
+	}
+	
+	#mobile-curtain-menu-button:hover
+	{
+		cursor: pointer;
 	}
 
 	.mobile-menu-title
