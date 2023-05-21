@@ -141,6 +141,7 @@ p, h1 { margin: 0 }
 
 #curtain-menu
 {
+	pointer-events: none;
 	margin-top: 70px;
 	opacity: 0;
 	background-color: #0d0e2e;
