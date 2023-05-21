@@ -49,7 +49,7 @@ function CurtainMenu()
 
 function MobileMenuButton()
 {
-    document.getElementById("mobile-menu-button").style.transform = !mobileMenu ? "rotate(90deg)" : "rotate(0deg)";
+    document.getElementById("mobile-curtain-menu-button").style.transform = !mobileMenu ? "rotate(90deg)" : "rotate(0deg)";
     
     document.getElementById("mobile-menu-content").style.opacity = !mobileMenu ? "100%" : "0%";
     document.getElementById("mobile-menu").style.height = !mobileMenu ? "100%" : "0%";
