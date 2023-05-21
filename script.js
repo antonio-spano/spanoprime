@@ -40,6 +40,7 @@ function CurtainMenu()
 {
     document.getElementById("curtain-menu").style.height = !navStatus ? "160px" : "0%";
     document.getElementById("curtain-menu").style.opacity = !navStatus ? "100%" : "0%";
+    document.getElementById("curtain-menu").style.pointerEvents = !navStatus ? "all" : "none";
 
     document.getElementById("log-in").style.borderRadius = !navStatus ? "0px" : "15px";
     
