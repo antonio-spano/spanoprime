@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SpanoPrime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpanoPrime</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h2>Paolilolilum Furlanium - the prime, the final end -</h2>
+    <header>
+        <div class="container">
+            <h1>SpanoPrime</h1>
+            <p>I post più fieri del mondo</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="post-previews">
+            <h2>Ultimi Post</h2>
+            <!-- Le anteprime dei post verranno inserite qui da JavaScript -->
+            <div class="loading-placeholder">Caricamento articoli...</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 SpanoPrime. Futuro PRO Bodybuilder.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Inizializza la pagina principale
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPostPreviews();
+        });
+    </script>
 </body>
 </html>

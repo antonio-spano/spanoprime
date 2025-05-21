@@ -1,4 +1,228 @@
-html
-{
-	margin: 0px;
+/* Reset base e stili globali */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 30px 0;
+    border-bottom: 1px solid #e9ecef;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #212529;
+}
+.blog-title-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #6c757d;
+    font-size: 1.1em;
+}
+
+/* Main content */
+main {
+    padding-bottom: 40px;
+}
+
+/* Anteprime Post (index.html) */
+#post-previews h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c40000;
+    padding-bottom: 10px;
+    color: #343a40;
+}
+
+.post-preview {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.post-preview:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.post-preview img.preview-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.post-preview h3 {
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+.post-preview h3 a {
+    text-decoration: none;
+    color: #c40000;
+}
+
+.post-preview h3 a:hover {
+    text-decoration: underline;
+}
+
+.post-meta { /* Usato per le anteprime */
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.post-excerpt {
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #c40000;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.read-more:hover {
+    background-color: #c40000;
+}
+
+.loading-placeholder {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Pagina Singolo Post (es. posts/mio-post.html) */
+.full-post-content { /* Classe usata nell' <article> del post singolo */
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.full-post-content h1 { /* Titolo principale del post */
+    font-size: 2.2em;
+    color: #212529;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.post-meta-full { /* Metadati nel post singolo */
+    font-size: 0.95em;
+    color: #6c757d;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.post-meta-full .post-date, .post-meta-full .post-author { /* Per stilare specifici span se vuoi */
+    /* Stili specifici se necessario */
+}
+
+
+.post-image-full { /* Immagine principale del post */
+    max-width:100%;
+    height:auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: block; /* Per centrare con margin auto se non è float */
+}
+
+.post-body-full p {
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+.post-body-full img { /* Stile generico per immagini nel corpo del post */
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 15px 0;
+    display: block;
+}
+
+.post-body-full ul, .post-body-full ol {
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+.post-body-full code {
+    background-color: #e9ecef;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9em;
+}
+
+.post-body-full pre {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto; /* Per codice lungo */
+}
+.post-body-full pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.85em;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+footer a {
+    color: #00aeff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    .post-preview h3 {
+        font-size: 1.4em;
+    }
+    .full-post-content h1 {
+        font-size: 1.8em;
+    }
 }
