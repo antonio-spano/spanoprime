@@ -4,11 +4,20 @@ const postsData = [
     {
         id: "1",
         title: "Il Mio Primo Articolo sul Web Moderno",
-        date: "2025-05-22",
+        date: "2025-05-21",
         author: "SpanoPrime",
         image: "img/placeholder.jpg", // Immagine per l'anteprima su index.html
         excerpt: "Una breve introduzione a un bel cazzo di niente.",
         contentFile: "posts/post-1.html" // Percorso al file HTML del post
+    },
+    {
+        id: "2",
+        title: "La sfida è ufficialmente aperta...",
+        date: "2025-05-22",
+        author: "SpanoPrime",
+        image: "img/paolo.jpg", // Immagine per l'anteprima su index.html
+        excerpt: "Paolo è assurdo e SpanoPrime lancia una sfida.",
+        contentFile: "posts/post-2.html" // Percorso al file HTML del post
     }
 ];
 
