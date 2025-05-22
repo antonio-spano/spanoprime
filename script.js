@@ -15,7 +15,7 @@ const postsData = [
         title: "La sfida è ufficialmente aperta...",
         date: "2025-05-22",
         author: "SpanoPrime",
-        image: "img/paolo.jpg", // Immagine per l'anteprima su index.html
+        image: "img/paolo1.jpg", // Immagine per l'anteprima su index.html
         excerpt: "Paolo è assurdo e SpanoPrime lancia una sfida.",
         contentFile: "posts/post-2.html" // Percorso al file HTML del post
     }
