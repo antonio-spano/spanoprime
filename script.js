@@ -20,13 +20,22 @@ const postsData = [
         contentFile: "posts/post-2.html" // Percorso al file HTML del post
     },
     {
-        id: "2",
+        id: "3",
         title: "Prendersi cura della propria schiena",
         date: "2025-05-23",
         author: "SpanoPrime",
         image: "img/back.jpg", // Immagine per l'anteprima su index.html
         excerpt: "L'importanza dell'esecuzione e dell'alimentazione.",
         contentFile: "posts/post-3.html" // Percorso al file HTML del post
+    },
+    {
+        id: "4",
+        title: "Le palle si rompono pian piano",
+        date: "2025-05-26",
+        author: "SpanoPrime",
+        image: "img/zeb.jpg", // Immagine per l'anteprima su index.html
+        excerpt: "Magnitudo 7 gne gne ma scoppia.",
+        contentFile: "posts/post-4.html" // Percorso al file HTML del post
     }
 ];
 
