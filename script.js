@@ -39,7 +39,7 @@ const postsData = [
     },
     {
         id: "4",
-        title: "Sarà questo il contenuto dello screenshot, Perego?",
+        title: "Sarà questo il contenuto dello screenshot, Godo?",
         date: "2025-05-27",
         author: "SpanoPrime",
         image: "img/zeb1.jpg", // Immagine per l'anteprima su index.html
