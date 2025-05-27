@@ -36,7 +36,16 @@ const postsData = [
         image: "img/zeb.jpg", // Immagine per l'anteprima su index.html
         excerpt: "Magnitudo 7 gne gne ma scoppia.",
         contentFile: "posts/post-4.html" // Percorso al file HTML del post
-    }
+    },
+    {
+        id: "4",
+        title: "Sarà questo il contenuto dello screenshot, Perego?",
+        date: "2025-05-27",
+        author: "SpanoPrime",
+        image: "img/zeb1.jpg", // Immagine per l'anteprima su index.html
+        excerpt: "Spoiler: no! no!",
+        contentFile: "posts/godo.html" // Percorso al file HTML del post
+    },
 ];
 
 // --- FUNZIONI PER LA PAGINA PRINCIPALE (index.html) ---
